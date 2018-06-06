@@ -5,24 +5,23 @@ package com.cice.clases.ejecrcios;
 
 public class Contador {
 
-    private int contador = 1000;
+    private int cuenta;
 
-
-    public void incrementar() {
+    public void incrementar(int numero){
+        cuenta+numero;
+    }
+    public void decrementar(int numero){
+        cuenta+numero;
 
     }
 
-    public void decrementar() {
+    public void setCuenta(int cuenta) {
+        this.cuenta = cuenta;
 
     }
 
-    public void setContador(int contadorDado) {
-        contador = contadorDado;
-
-    }
-
-    public int getContador() {
-        return contador;
+    public int getCuenta() {
+        return cuenta;
     }
 
 
