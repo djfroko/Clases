@@ -5,23 +5,22 @@ package com.cice.clases.ejecrcios;
 
 public class Cuenta {
 
-    private int balance = 1000;
+    private double balance;
 
-
-    public void ingreso() {
-
+    public void ingreso(double cantidad){
+        balance += cantidad;
     }
 
-    public void reintegro() {
-
+    public void reintegro(double cantidad){
+        balance -= cantidad;
     }
 
-    public void transferencia() {
-
+    public void transferencia(double cantidad){
+        balance -= cantidad;
     }
 
-    public void setBalance(int balanceDado) {
-        balance = balanceDado;
+    public void setBalance(double cantidad){
+        balance = cantidad;
     }
 
     public double getBalance() {

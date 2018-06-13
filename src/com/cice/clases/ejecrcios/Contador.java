@@ -8,21 +8,18 @@ public class Contador {
     private int cuenta;
 
     public void incrementar(int numero){
-        cuenta+numero;
+        cuenta+=numero;
     }
+
     public void decrementar(int numero){
-        cuenta+numero;
-
+        cuenta-=numero;
     }
 
-    public void setCuenta(int cuenta) {
-        this.cuenta = cuenta;
-
+    public void setCuenta(int numero) {
+        cuenta = numero;
     }
 
-    public int getCuenta() {
+    public int getCuenta(){
         return cuenta;
     }
-
-
 }
